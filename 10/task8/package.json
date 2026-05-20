@@ -1,0 +1,12 @@
+{
+  "name": "task8",
+  "version": "1.0.0",
+  "scripts": {
+    "local": "vite --mode loc",
+    "dev":   "vite --mode dev",
+    "prod":  "vite build --mode prod"
+},
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

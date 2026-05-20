@@ -1,41 +1,16 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>PixiJS v8 — вращающийся прямоугольник</title>
-  <style>body { margin: 0; background: #000; overflow: hidden; }</style>
-  <script type="importmap">
-  {
-    "imports": {
-      "pixi.js": "https://cdn.jsdelivr.net/npm/pixi.js@8/dist/pixi.mjs"
-    }
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <script type="module">
-    import { Application, Graphics } from 'pixi.js';
+    <h2>Задание 1</h2>
+    <iframe src="1.html"></iframe>
 
-    (async () => {
-      const app = new Application();
-      await app.init({
-        autoDensity: true,
-        resolution: window.devicePixelRatio || 1,
-        background: '#111111',
-		antialias: true
-      });
-      document.body.appendChild(app.canvas);
+    <h2>Задание 2 VK CORS</h2>
+    <iframe src="2.html"></iframe>
 
-      const rect = new Graphics();
-      rect.rect(-100, -50, 200, 100);
-      rect.fill('#ffffff');
-      rect.position.set(app.screen.width / 2, app.screen.height / 2);
-      app.stage.addChild(rect);
-
-      app.ticker.add(() => {
-        rect.rotation += 0.02;
-      });
-    })();
-  </script>
+    <h2>Задание 3 GEOIP</h2>
+    <iframe src="3.html"></iframe>
 </body>
-</html>
