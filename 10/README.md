@@ -23,23 +23,29 @@ npm install axios
 ![alt text](images/image.png)
 
 ## Задание 5
-![alt text](images/image-1.png)
-
+Были получены заголовки для get-запроса на vk.com. Как можно видеть, тут нет заголовка Access-Control-Allow-Origin, что подтверждает резульат, полученный во 2 задании.
+![alt text](images/image-7.png)
+Этот заголовок есть для geoiplookup, поэтому браузер не блокирует cross-origin заросы к нему.
 ![alt text](images/image-2.png)
 ## Задание 6
-зарегался на reqres.in, получил ключ
+Зарегался на reqres.in, получил ключ, поместил его в заголовок x-api-key для аутентификации при запросе в апи. Сделал гет-запрос, взял первый email из data.
 ![alt text](images/image-3.png)
 
+Зарегестрировал пользователя с этим email через post, в заголовки так же поместил ключ.
 ![alt text](images/image-4.png)
 
 ## Задание 7
+Сделал логин для этого пользователя, в заголовки вставил свой ключ.
 ![alt text](images/image-6.png)
 
 ## Задание 8
 Все исходники в директории task8
-cd task8
-npm install vite --save-dev
+`cd task8`
+`npm install vite --save-dev`
 
-Error: "local" cannot be used as a mode name because it conflicts with the .local postfix for .env files.
+Имя local нельзя использовать для переменных среды, оно зарезервированно для постфикса.
+>Error: "local" cannot be used as a mode name because it conflicts with the .local postfix for .env files.
 
-npm run local
+Поэтому сам файл я назвал `.env.loc`. Однако, запустить его можно через:
+
+`npm run local`
